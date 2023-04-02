@@ -1,6 +1,8 @@
+use enums::{enums_main, options::{options_main}, match_flow::match_main};
 use slices::slices_main;
 use structs::{struct_main, example::main_structs_example};
 
+mod enums;
 mod data_types;
 mod functions;
 mod control_flow;
@@ -21,6 +23,9 @@ fn main() {
     // let word = first_words(&s);
     // slices_main();
     // struct_main();
-    main_structs_example();
-   
+    // main_structs_example();
+    enums_main();
+    options_main();
+    match_main();
+
 }
