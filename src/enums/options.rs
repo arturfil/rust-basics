@@ -1,5 +1,3 @@
-
-
 pub fn options_main() {
 
     let some_number = Some(5);

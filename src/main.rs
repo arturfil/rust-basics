@@ -1,8 +1,8 @@
-use enums::{enums_main, options::{options_main}, match_flow::match_main};
+use collections::vectors::vectors_main;
+use enums::options::options_main;
 use slices::slices_main;
 use structs::{struct_main, example::main_structs_example};
 
-mod enums;
 mod data_types;
 mod functions;
 mod control_flow;
@@ -10,6 +10,8 @@ mod ownership;
 mod references;
 mod slices;
 mod structs;
+mod enums;
+mod collections;
 
 fn main() {
     
@@ -24,8 +26,9 @@ fn main() {
     // slices_main();
     // struct_main();
     // main_structs_example();
-    enums_main();
-    options_main();
-    match_main();
+    // enums_main();
+    // options_main();
+    vectors_main();
+    // match_main();
 
 }
