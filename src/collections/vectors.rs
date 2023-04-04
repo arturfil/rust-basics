@@ -38,7 +38,20 @@ pub fn vectors_main() {
         *x *= 2;
     } 
 
-    for k in &sqrs {
-       println!("no. {k}"); 
+    for k in sqrs {
+        println!("no. {k}"); 
     }
+    
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Tex(String),
+    }
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Tex(String::from("blue")),
+        SpreadsheetCell::Float(10.21),
+    ];
+
 }
