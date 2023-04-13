@@ -16,6 +16,7 @@ mod enums;
 mod collections;
 mod error_handling;
 mod generics;
+mod traits;
 
 fn main() {
     
