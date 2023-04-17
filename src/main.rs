@@ -2,8 +2,13 @@ use collections::{vectors::vectors_main, strings::strings_main, hash_maps::maps_
 use enums::options::options_main;
 use error_handling::errors::main_errors;
 use generics::generics_main;
+use lifetimes::lifetimes_main;
 use slices::slices_main;
 use structs::{struct_main, example::main_structs_example};
+use trait_brounds::trait_bounds_main;
+use traits::{Tweet, traits_main};
+
+use crate::traits::{Summary, NewsArticle};
 
 mod data_types;
 mod functions;
@@ -17,6 +22,8 @@ mod collections;
 mod error_handling;
 mod generics;
 mod traits;
+mod trait_brounds;
+mod lifetimes;
 
 fn main() {
     
@@ -38,5 +45,9 @@ fn main() {
     // strings_main();  
     // maps_main()
     // main_errors(); 
-    generics_main();
+    // generics_main();
+    // traits_main();
+    // trait_bounds_main();
+    lifetimes_main();
 }
+

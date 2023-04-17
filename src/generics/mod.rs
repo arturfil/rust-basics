@@ -1,17 +1,17 @@
 
-// fn largest_i32(list: &[i32]) -> &i32 {
-//     let mut largest = &list[0];
-//     for item in list {
-//         println!("{item}");
-//         if item > largest {
-//             largest = item;
-//         }
-//     }
-//     largest
-// }
+fn largest_i32(list: &[i32]) -> &i32 {
+    let mut largest = &list[0];
+    for item in list {
+        println!("{item}");
+        if item > largest {
+            largest = item;
+        }
+    }
+    largest
+}
 
-const integer = Some(5);
-const float = Some(5.5);
+// const integer = Some(5);
+// const float = Some(5.5);
 
 enum Option_i32 {
     Some(i32),
