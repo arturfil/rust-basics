@@ -10,7 +10,6 @@ use traits::{Tweet, traits_main};
 
 use crate::traits::{Summary, NewsArticle};
 
-mod data_types;
 mod functions;
 mod control_flow;
 mod ownership;
