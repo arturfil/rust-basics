@@ -9,10 +9,11 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     }
 }
 
-fn longest_2(x: &str, y: &str) -> &'a str {
+// this won't run
+/*fn longest_2<'a>(x: &str, y: &str) -> &'a str {
     let result = String::from("really long string");
     result.as_str()
-}
+}*/
 
 struct ImportantExcerpt<'a> {
     part: &'a str, 
@@ -74,14 +75,14 @@ pub fn lifetimes_main() {
    */
 
     let str1 = String::from("abcdasdfasde");
-    let result;
+    // let result;
     {
         let str2 = String::from("&str");
 
-        result = longest(str1.as_str(), str2.as_str());
+        // result = longest(str1.as_str(), str2.as_str()); // uncomment to see error
 
     }
-    println!("The longest string is {}", result);
+    // println!("The longest string is {}", result);
 
     let i = ImportantExcerpt {
         part: &String::from("first part"),

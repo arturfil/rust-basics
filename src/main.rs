@@ -23,6 +23,7 @@ mod generics;
 mod traits;
 mod trait_brounds;
 mod lifetimes;
+mod automated_tests;
 
 fn main() {
     
@@ -47,6 +48,7 @@ fn main() {
     // generics_main();
     // traits_main();
     // trait_bounds_main();
-    lifetimes_main();
+    // lifetimes_main();
+    test_main();
 }
 
